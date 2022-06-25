@@ -186,6 +186,10 @@ h3{
    margin-bottom: 3vh;
 }
 
+.barr{
+   transform: scale(0);
+}
+
 
 @media (max-width: 600px) {
    .texto{
@@ -194,6 +198,7 @@ h3{
    }
 
    .barr{
+      transform: scale(1);
       display: flex;
       position: absolute;
       position: fixed;
@@ -203,6 +208,8 @@ h3{
       width: 100%;
       height: 7vh;
       background-color: var(--bot-color);
+      border-top: var(--scroll-active) solid 2px;
+      box-shadow: 0 0 20px 0px var(--scroll-hover);
    }
 
    .barr a{
