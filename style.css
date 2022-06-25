@@ -61,7 +61,7 @@ header{
 }
 
 header:hover{
-   width: 20%;
+   width: 38vh;
 }
 
 img{
@@ -160,8 +160,8 @@ header:hover ul li a .title{
    display: inline-block;
    /* position: relative; */
    font-size: 3vh;
-   padding: 8%;
-   padding-left: calc(13% + 1.8vh);
+   padding: 8vh;
+   padding-left: 18vh;
 }
 
 .texto a{
@@ -184,4 +184,59 @@ h2{
 h3{
    text-align: center;
    margin-bottom: 3vh;
+}
+
+
+@media (max-width: 600px) {
+   .texto{
+      margin-bottom: 7vh;
+      padding: 6%;
+   }
+
+   .barr{
+      display: flex;
+      position: absolute;
+      position: fixed;
+      align-items: center;
+      justify-content: space-between;
+      top: 93vh;
+      width: 100%;
+      height: 7vh;
+      background-color: var(--bot-color);
+   }
+
+   .barr a{
+      display: block;
+      text-decoration: none;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      color: #e9e3e3;
+      text-align: center;font-size: 2vh;
+   }
+   
+   .barr a:active{
+      color: #ffffff;
+   }
+
+   header{
+      position: relative;
+      width: 10vh;
+      /* width: 280px; */
+      height: 100vh;
+      background: var(--background);
+      box-shadow: 1.8vh 0 0 var(--bot-color);
+      overflow: hidden;
+      transition: width 0.7s;
+      /* display: inline-block; */
+      /* margin: 0; */
+      transform: scale(0);
+      position: absolute;
+      position: fixed;
+   }
+
+   header .equis:active {
+      transform: scale(1);
+   }
+
 }
