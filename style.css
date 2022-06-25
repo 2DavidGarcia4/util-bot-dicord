@@ -121,7 +121,7 @@ header ul li a .icon{
    /* position: relative; */
    /* display: block; */
    min-width: 90%;
-   line-height: 11vh;
+   line-height: 12vh;
    height: 0;
    text-align: center;
    transition: line-height 0.3s, min-width 0.5s;
