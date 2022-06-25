@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service</title>
+    <link rel="icon" href="img/Logo-bot.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="texto">
+        <h2>Política de privacidad</h2>
+        <p>
+            Al utilizar la aplicación <b>Útil</b> de <a href="https://discord.com/" target="_blank"><b>Discord</b></a> usted está aceptando nuestras políticas de privacidad las cuales son las siguientes. <br>
+            Primero que nada, <b>¿Útil es seguro?</b>, <b>Útil</b> solo recopila los datos necesarios del usuario que no llegan a afectar a los usuarios tales como su etiqueta o nombre de usuario, identificación, fecha de creación de la cuenta y su avatar y los recopilamos para el correcto funcionamiento de la aplicación.
+            <br><br>
+            <i>Los datos recopilados no se comparten ni mucho menos se venden a ninguna persona, empresa, etc.</i>
+
+        </p>
+
+        <h2 class="tdu">Términos de uso</h2>
+        <p>
+            Se concede el permiso de usar todas las características con las que cuenta la aplicación Útil pero al hacer un mal funcionamiento de ella, usted puede llegar a ser sancionado, por lo cuál, las cosas que no se pueden llegar a hacer con el bot son las siguientes:
+            <b>
+            <ul>
+                <li>Aprovechamiento de errores que contiene el bot</li>
+                <li>Generar ingresos por utilizar al bot</li>
+                <li>Utilizar al bot para usos maliciosos</li>
+            </ul>
+            </b>
+            <br><br>
+            <i>Si realizas algún tipo de estás acciones el castigo puede ser la completa prohibición del usuario a utilizar a <b>Útil</b>.</i>
+
+        </p>
+    </div>
+
+    <header>
+        <a href="https://discord.com/api/oauth2/authorize?client_id=935707268090056734&permissions=1239568329975&scope=bot%20applications.commands" target="_blank"><img src="./img/util-bot-icon.png" alt="icon útil bot"></a>
+        <nav>
+            <ul>
+                <li class="list">
+                    <a href="./index.html">
+                        <span class="icon">
+                            <ion-icon name="help-outline"></ion-icon>
+                        </span>
+                        <span class="title">¿Que es?</span>
+                    </a>
+                </li>
+                <li class="list active">
+                    <a href="/tos.html">
+                        <span class="icon">
+                            <ion-icon name="information-outline"></ion-icon>
+                        </span>
+                        <span class="title">Términos de servicio</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="https://discord.com/api/oauth2/authorize?client_id=935707268090056734&permissions=1239568329975&scope=bot%20applications.commands" target="_blank">
+                        <span class="icon">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </span>
+                        <span class="title">Invitar</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="https://discord.gg/G7GUD7eNCb" target="_blank">
+                        <span class="icon">
+                            <ion-icon name="logo-discord"></ion-icon>
+                        </span>
+                        <span class="title">Soporte</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <header class="two"></header> -->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink(){
+            list.forEach((item) => 
+            item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+        item.addEventListener('click',activeLink));
+    </script>
+</body>
+</html>

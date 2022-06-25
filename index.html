@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Útil</title>
+    <link rel="icon" href="img/Logo-bot.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="texto">
+        <h2>¿Que es Útil bot?</h2>
+        <p>
+            Es un bot de <a href="https://discord.com/" target="_blank"><b>Discord</b></a> multifuncional el cual te ofrece más de <b>40</b> comandos que te pueden ayudar de muchas maneras dentro de tu servidor, te pueden ayudar a obtener información de tu servidor, usuario, invitación o emoji, entre otros comandos que generales que te pueden ser útiles. <br><br>
+            Moderar tu servidor, te ofrece los típicos comandos (warn, mute, mutelist, unmute, kick, ban y unban) pero tienen historial de sanciones para ver cuántas sanciones ha tenido un miembro de tu servidor. <br><br>
+            Administrar tu servidor o configurarlo, te ofrece comandos para personalizar a tu gusto el prefijo del bot, comandos para agregar o eliminar un rol a todos los miembros del servidor, comandos para ver cuántos miembros tienen cierto rol o cuántos no lo tienen. <br><br>
+            <br><br>
+            <br>
+            <h3>Actualmente cuenta con 2 sistemas</h3>
+            <b>Sistema de puntos:</b> creado con la intención de ayudar a los dueños y administradores de servidores a tener una mejor forma de administrar las acciones de los demás miembros del staff y determinar con mayor facilidad cuando un miembro del staff se merece un ascenso de rango.
+            <br><br>
+            <b>Sistema de auto alianzas:</b> creado para facilitar el trabajo que implica el crear una alianza, con un comando creas un alianza con todos los servidores que estén utilizando este sistema, con otro comandos configurar la plantilla.
+            
+        </p>
+    </div>
+
+    <header>
+        <a href="https://discord.com/api/oauth2/authorize?client_id=935707268090056734&permissions=1239568329975&scope=bot%20applications.commands" target="_blank"><img src="./img/util-bot-icon.png" alt="icon útil bot"></a>
+        <nav>
+            <ul>
+                <li class="list active">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="help-outline"></ion-icon>
+                        </span>
+                        <span class="title">¿Que es?</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="./tos.html">
+                        <span class="icon">
+                            <ion-icon name="information-outline"></ion-icon>
+                        </span>
+                        <span class="title">Términos de servicio</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="https://discord.com/api/oauth2/authorize?client_id=935707268090056734&permissions=1239568329975&scope=bot%20applications.commands" target="_blank">
+                        <span class="icon">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </span>
+                        <span class="title">Invitar</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="https://discord.gg/G7GUD7eNCb" target="_blank">
+                        <span class="icon">
+                            <ion-icon name="logo-discord"></ion-icon>
+                        </span>
+                        <span class="title">Soporte</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <header class="two"></header> -->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink(){
+            list.forEach((item) => 
+            item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+        item.addEventListener('click',activeLink));
+    </script>
+</body>
+</html>
